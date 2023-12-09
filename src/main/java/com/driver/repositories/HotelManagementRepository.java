@@ -63,7 +63,7 @@ public class HotelManagementRepository {
                 {
                     currHotelName=hotelName;
                 }
-                if(currHotelName.compareTo(hotelName)>0)
+                else if(hotel.getFacilities().size()>maxFacilities || currHotelName.compareTo(hotelName)>0)
                 {
                     currHotelName=hotelName;
                 }
